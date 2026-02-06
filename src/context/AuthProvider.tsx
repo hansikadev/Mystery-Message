@@ -13,3 +13,11 @@ export default function AuthProvider({
     </SessionProvider>
   );
 }
+
+
+// What is SessionProvider?
+// It is a React Context Provider that:
+// -> Fetches session info from /api/auth/session
+// -> Stores it in React context
+// -> Makes it available to all children
+

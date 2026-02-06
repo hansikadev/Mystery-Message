@@ -17,7 +17,7 @@ export const authOptions: NextAuthOptions = {
         await dbConnect();
         try {
           const user = await UserModel.findOne({
-            $or: [
+            $or: [ 
               { email: credentials.identifier },
               { username: credentials.identifier },
             ],
@@ -43,7 +43,9 @@ export const authOptions: NextAuthOptions = {
       },
     }),
   ],
-  callbacks: {
+
+
+  callbacks: { //Callbacks let you inject your own data.
     async jwt({ token, user }) {
       if (user) {
         token._id = user._id?.toString(); // Convert ObjectId to string
@@ -63,6 +65,8 @@ export const authOptions: NextAuthOptions = {
       return session;
     },
   },
+
+
   session: {
     strategy: 'jwt',
   },
