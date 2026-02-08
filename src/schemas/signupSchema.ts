@@ -11,3 +11,17 @@ export const signupSchema = z.object({
     email: z.string().email({message:"Please enter a valid email address"}),
     password: z.string().min(6, {message:"Password must be at least 6 characters long"})
 })
+
+
+
+// Zod is:
+// A runtime validation library
+// For JavaScript / TypeScript
+
+// It:
+// Checks actual values at runtime
+// Returns structured errors
+// Prevents bad data from flowing deeper
+// TypeScript alone is not enough because:
+// TS disappears at runtime
+// User input is untrusted

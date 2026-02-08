@@ -16,7 +16,7 @@ const MessageSchema: Schema<Message> = new Schema({
     }
 })
 
-
+// An interface describes the shape of an object.
 export interface User extends Document {
     username: string;
     email: string;
@@ -38,7 +38,7 @@ const UserSchema: Schema<User> = new Schema({
         type: String,
         required: [true,"email is required"],
         unique: true,
-        match:[/.+@.+\..+/,'please use a valid email address'],
+        match:[/.+@.+\..+/,'please use a valid email address'], //Regex ensures basic email format
         
     },
     password: {
