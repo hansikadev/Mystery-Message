@@ -14,6 +14,7 @@
     "@hookform/resolvers": "^5.2.2",
     "@react-email/components": "^1.0.6",
     "ai": "^6.0.71",
+    "axios": "^1.13.4",
     "bcrypt": "^6.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -31,6 +32,7 @@
     "resend": "^6.9.1",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.4.0",
+    "usehooks-ts": "^3.1.1",
     "zod": "^4.3.6"
   },
   "devDependencies": {

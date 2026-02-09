@@ -1,6 +1,6 @@
 import {Message} from "../model/user";
 
-export interface ApiResponse<T> {
+export interface ApiResponse {
     success: boolean;
     message: string;
     isAcceptingMessages?: boolean;
